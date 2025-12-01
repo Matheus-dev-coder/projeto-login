@@ -24,15 +24,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 540px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+     transform: translate(-50%, -50%);
 }
 section#login > div#imagem {
     display: block;
@@ -53,12 +53,32 @@ div#formulario > h1 {
 div.campo > label {
     display: none;
 }
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: #e5d1f1;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+div.campo > input:focus-within {
+    background-color: white;
+}
 
 form > div.campo{
     background-color: #9145c4;
+    border: 2px solid #9145c4;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -97,6 +117,7 @@ form > a.botao{
 form > a.botao:hover{
     background-color: #5f2c82;
     height: 42px;
+ 
 }
 
 form > a.botao > span {
